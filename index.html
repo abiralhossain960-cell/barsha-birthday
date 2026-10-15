@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Barsha 💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #71334c;
+  background: #fff0f5;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  width: 100%;
+  padding: 35px 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 10%, #ffffff, transparent 35%),
+    linear-gradient(135deg, #fff0f5, #ffdfeb, #fff6f8);
+}
+
+.page.active {
+  display: flex;
+  animation: fade 0.7s ease;
+}
+
+.content {
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #b15c7c;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 8vw, 65px);
+  line-height: 1.2;
+  margin: 15px 0 22px;
+}
+
+.script {
+  font-family: 'Dancing Script', cursive;
+  color: #d64e80;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #87546a;
+}
+
+.heart {
+  font-size: 70px;
+  animation: beat 1.5s infinite;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.13); }
+}
+
+.cake {
+  font-size: 75px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 50px;
+  background: #d64e80;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px #d64e8040;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  background: #b93467;
+}
+
+.card {
+  margin: 25px auto 0;
+  padding: 23px;
+  max-width: 500px;
+  background: #ffffffb8;
+  border: 1px solid white;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px #ad56741a;
+}
+
+.letter {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fffdf8;
+  border: 1px solid #f2d8df;
+  border-radius: 6px;
+  box-shadow: 0 15px 40px #98516c20;
+  text-align: left;
+  position: relative;
+}
+
+.letter h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  color: #c54876;
+  margin-bottom: 18px;
+}
+
+.letter p {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 13px;
+}
+
+.signature {
+  text-align: right;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  color: #d64e80;
+  margin-top: 20px;
+}
+
+.footer {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #bd8299;
+  margin-top: 25px;
+}
+
+.decor {
+  position: absolute;
+  opacity: 0.6;
+  font-size: 25px;
+  animation: float 4s infinite ease-in-out;
+}
+
+.d1 { top: 10%; left: 8%; }
+.d2 { top: 18%; right: 9%; animation-delay: 1s; }
+.d3 { bottom: 12%; left: 10%; animation-delay: 2s; }
+.d4 { bottom: 10%; right: 10%; animation-delay: .5s; }
+
+#particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.particle {
+  position: absolute;
+  bottom: -30px;
+  animation: rise linear forwards;
+}
+
+@keyframes rise {
+  from { transform: translateY(0) rotate(0); opacity: 0; }
+  10% { opacity: .8; }
+  to { transform: translateY(-110vh) rotate(40deg); opacity: 0; }
+}
+
+@media(max-width: 480px) {
+  .letter { padding: 22px; }
+  .letter p { font-size: 13px; }
+  .page { padding: 25px 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <span class="decor d1">♡</span>
+  <span class="decor d2">✦</span>
+  <span class="decor d3">🌷</span>
+  <span class="decor d4">♡</span>
+
+  <div class="content">
+    <div class="label">A LITTLE SOMETHING FOR YOU</div>
+
+    <div class="heart">💗</div>
+
+    <h1>Hey, <span class="script">Barsha!</span></h1>
+
+    <p>
+      Someone special deserves a little surprise today.<br>
+      And guess what? This little corner of the internet<br>
+      was made just for you.
+    </p>
+
+    <p style="margin-top:20px">
+      Are you ready to open your surprise? ✨
+    </p>
+
+    <button class="btn" onclick="goToPage(2)">
+      Open Your Surprise ➜
+    </button>
+
+    <div class="footer">MADE WITH ♡ JUST FOR YOU</div>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <span class="decor d1">✨</span>
+  <span class="decor d2">💖</span>
+  <span class="decor d3">🌸</span>
+  <span class="decor d4">🦋</span>
+
+  <div class="content">
+    <div class="label">TODAY IS ALL ABOUT YOU</div>
+
+    <div class="cake">🎂</div>
+
+    <h1>
+      Happy Birthday<br>
+      <span class="script">Barsha!</span>
+    </h1>
+
+    <div class="card">
+      <p>
+        🌷 May your smile shine brighter than the stars.<br>
+        💖 May your heart always find reasons to be happy.<br>
+        ✨ May your dreams turn into beautiful realities.<br>
+        🦋 May your life be filled with love and laughter.
+      </p>
+    </div>
+
+    <p style="margin-top:22px">
+      You deserve all the beautiful things life has to offer. ♡
+    </p>
+
+    <button class="btn" onclick="goToPage(3)">
+      One Last Thing... ➜
+    </button>
+
+    <div class="footer">MAKE A WISH AND BLOW YOUR CANDLES 🎀</div>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+  <span class="decor d1">♡</span>
+  <span class="decor d2">🌷</span>
+  <span class="decor d3">✦</span>
+  <span class="decor d4">💌</span>
+
+  <div class="content">
+    <div class="label">A LETTER FROM THE HEART</div>
+
+    <div class="letter">
+      <h2>Dear Barsha, 💌</h2>
+
+      <p>
+        First of all, happiest birthday to you!
+        I hope today brings you a thousand reasons to smile
+        and memories you will cherish for a long time.
+      </p>
+
+      <p>
+        On your special day, I wish you more than just happiness.
+        I wish you peace when life feels difficult, courage when
+        things seem uncertain, and people who appreciate you
+        for exactly who you are.
+      </p>
+
+      <p>
+        May you always have the strength to chase your dreams,
+        the confidence to believe in yourself, and the heart
+        to enjoy even the smallest moments of life.
+      </p>
+
+      <p>
+        Remember that every birthday is another beautiful
+        beginning. Leave behind the worries of yesterday and
+        welcome all the wonderful possibilities waiting for you.
+      </p>
+
+      <p>
+        I hope your beautiful smile never fades and your heart
+        always stays full of hope. May this year be kinder,
+        brighter, and more beautiful than you imagined.
+      </p>
+
+      <p>
+        Happy Birthday once again, Barsha!
+        Keep shining, keep smiling, and keep being your
+        wonderful self. You deserve countless beautiful moments. 💗
+      </p>
+
+      <div class="signature">
+        With lots of love & best wishes ♡
+      </div>
+    </div>
+
+    <button class="btn" onclick="goToPage(1)">
+      ↺ Start Again
+    </button>
+
+    <div class="footer">THIS LITTLE SURPRISE IS YOURS ♡</div>
+  </div>
+</section>
+
+<script>
+function goToPage(number) {
+  document.querySelectorAll('.page').forEach(function(page) {
+    page.classList.remove('active');
+  });
+
+  const nextPage = document.getElementById('page' + number);
+  nextPage.classList.add('active');
+  nextPage.scrollTop = 0;
+
+  for (let i = 0; i < 15; i++) {
+    createParticle();
+  }
+}
+
+function createParticle() {
+  const container = document.getElementById('particles');
+  const particle = document.createElement('span');
+  const symbols = ['♡', '♥', '✨', '💗', '✦'];
+
+  particle.className = 'particle';
+  particle.textContent =
+    symbols[Math.floor(Math.random() * symbols.length)];
+
+  particle.style.left = Math.random() * 100 + '%';
+  particle.style.fontSize = (14 + Math.random() * 18) + 'px';
+  particle.style.animationDuration = (4 + Math.random() * 5) + 's';
+
+  container.appendChild(particle);
+
+  setTimeout(function() {
+    particle.remove();
+  }, 9500);
+}
+
+setInterval(createParticle, 900);
+</script>
+
+</body>
+</html>
